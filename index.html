@@ -60,9 +60,12 @@
         <p>Assine nossa Newsletter para se manter atualizado com nossos serviços e a programação cultural</p>
         <hr>
 
-        <form action="">
-            <input type="email" placeholder="Email">
-            <button>Cadastrar</button>
+        <form method="POST" action="https://smtl.gama.academy/leads/4a6a4fe0-5ffc-11ea-92b8-cb0262e26cca">
+            <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" placeholder="Nome Completo" required>
+            <input name="email" type="email" placeholder="Email" required>
+            <input name="redirectTo" type="hidden" value="https://angry-elion-feff6e.netlify.com" />
+            <input name="debugMode" type="hidden" value="true" />
+            <input class="submit" type="submit">
         </form>
     </section>
     <footer>

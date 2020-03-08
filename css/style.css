@@ -255,7 +255,7 @@ header li a { color: #191c03}
     flex-grow: 1;
 }
 
-.newsletter button {
+.newsletter input.submit {
     padding: 15px;
     background-color: #c3c63b;
     color: #fff;
