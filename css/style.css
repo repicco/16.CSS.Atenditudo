@@ -191,7 +191,8 @@ footer p {
     
     .secundaria {
         width: 96%;
-        padding: 0 2% 20% 2%;
+        padding: 0 2% 0% 2%;
+        margin-bottom: 20%;
     }
 
     .circulo1, .circulo2 {
