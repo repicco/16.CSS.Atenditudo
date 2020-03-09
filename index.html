@@ -13,20 +13,56 @@
     <!--Facebool-->
 </head>
 <body>
+    <!--MenuSuperior-->
     <header>
+        <a href="#">Logo</a>
     </header>
-    <section class="principal">
-        <form method="POST" action="https://smtl.gama.academy/leads/4a6a4fe0-5ffc-11ea-92b8-cb0262e26cca" data-netlify="true">
-            <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" placeholder="Nome Completo" required>
-            <input name="email" type="email" placeholder="Email" required>
-            <input name="redirectTo" type="hidden" value="4a6a4fe0-5ffc-11ea-92b8-cb0262e26cca" />
-            <input name="debugMode" type="hidden" value="true" />
-            <input class="submit" type="submit">
-        </form>
-    </section>
-    <section class="secundaria">
-        Aqui é imagem
-    </section>
+    <main class="container">
+        <section class="principal">
+            <!--Titulo-->
+            <h1>5 maneiras de conseguir mais clientes digitais</h1>
+
+            <!--ConteudoPrincipal-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At hic mollitia odio eligendi quis, fugiat pariatur numquam eaque quia incidunt ratione explicabo natus quibusdam nam voluptates voluptatem in? Ducimus, dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corporis sequi molestiae voluptates reiciendis accusantium corrupti! Eligendi quisquam, praesentium itaque enim, non repellat corporis recusandae mollitia suscipit incidunt aliquid veritatis!</p>
+
+            <!--Formulario-->
+            <form name="AtendiTudo" method="POST" action="https://smtl.gama.academy/leads/4a6a4fe0-5ffc-11ea-92b8-cb0262e26cca" netlify>
+                
+                <div id="f_input">
+                    <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" placeholder="Nome Completo" required id="f_name">
+
+                    <input name="email" type="email" placeholder="Email" required id="f_mail">
+
+                    <!--<input name="redirectTo" type="hidden" value="4a6a4fe0-5ffc-11ea-92b8-cb0262e26cca" />-->
+                    <input name="debugMode" type="hidden" value="true" />
+                </div>
+                
+
+                <input class="submit" type="submit" value="Baixar Ebook" id="f_enviar">
+            </form>
+
+            <!--Dicas-->
+            <div class="dicas">
+                <div class="item1">
+                    <h1>1</h1>
+                    <p>Como aumentar as vendas</p> 
+                </div>
+                <div class="item2">
+                    <h1>2</h1>
+                    <p>Como deixar o cliente feliz</p>
+                </div>
+                <div class="item3">
+                    <h1>3</h1>
+                    <p>Como fidelizar o ciente</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secundaria">
+            <div class="circulo1"></div>
+            <div class="circulo2"></div>
+        </section>
+    </main>   
     <footer>
         <ul>
             <li><a href=""><i class="fab fa-facebook"></i></a></li>

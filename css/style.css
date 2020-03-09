@@ -25,3 +25,145 @@ html, body {
 }
 
 /*--------------------------------Header------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+    padding-left: 20px;
+    border-bottom: 3px solid rgb(52, 156, 207);
+}
+/*--------------------------------Container------------------------------------*/
+.container {
+    display: flex;
+    padding-top: 25px;
+}
+
+/*--------------------------------Principal------------------------------------*/
+.principal {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-grow: 5;
+    width: 50%;
+}
+
+.principal h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.principal p {
+    font-size: 16px;
+    margin-bottom: 26px;
+    font
+}
+
+/*-----Form-----*/
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+}
+
+#f_input {
+    display: flex;
+    padding-bottom: 10px;    
+}
+
+#f_name {
+    width: 44%;
+    flex-grow: 1;
+    margin-right: 3px;
+    border: 1px solid;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#f_mail {
+    width: 44%;
+    flex-grow: 1;
+    margin-left: 3px;
+    border: 1px solid;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#f_enviar {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: rgb(52, 156, 207);
+    border-radius: 10px;
+    background-color: rgb(52, 183, 177);
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/*-----Dicas-----*/
+.dicas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dicas .item1, .item2, .item3 {
+    width: 125px;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dicas h1 {
+    border: 3px solid;
+    border-radius: 50%;
+    height: 125px;
+    align-items: center;
+    padding-top: 33%;
+}
+
+
+/*--------------------------------Secundaria------------------------------------*/
+.secundaria {
+    flex-grow: 5;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.circulo1 {
+    height: 300px;
+    width: 300px;
+    border: 4px solid;
+    border-radius: 50%;
+    background-color: rgb(52, 183, 177);
+    position: absolute;
+    left: 53%;
+}
+
+.circulo2 {
+    height: 300px;
+    width: 300px;
+    border: 4px solid;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+}
+
+/*---------------------------------Footer-----------------------------------*/
+
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
