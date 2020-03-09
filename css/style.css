@@ -51,12 +51,13 @@ header {
 .principal h1 {
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .principal p {
     font-size: 16px;
     margin-bottom: 26px;
-    font
+    text-align: center;
 }
 
 /*-----Form-----*/
@@ -91,7 +92,7 @@ form {
     padding: 5px;
 }
 
-#f_enviar {
+#f_enviar, .botao {
     padding-top: 13px;
     padding-bottom: 13px;
     border: rgb(52, 156, 207);
@@ -100,6 +101,11 @@ form {
     color: #fff;
     font-size: 25px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.linkbtn:hover > .botao, #f_enviar:hover {     
+    background-color: rgb(52, 156, 207);
 }
 
 /*-----Dicas-----*/
@@ -134,21 +140,20 @@ form {
     align-content: center;
 }
 
-.circulo1 {
+.circulo1, .circulo2 {
     height: 300px;
     width: 300px;
     border: 4px solid;
     border-radius: 50%;
+}
+
+.circulo1 {
     background-color: rgb(52, 183, 177);
-    position: absolute;
-    left: 53%;
+    position: relative;
+    left: -15%;
 }
 
 .circulo2 {
-    height: 300px;
-    width: 300px;
-    border: 4px solid;
-    border-radius: 50%;
     background-color: #fff;
     z-index: 1;
     position: absolute;
@@ -166,4 +171,55 @@ footer ul {
 footer p {
     display: flex;
     justify-content: center;
+}
+
+/*----------Media------*/
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .principal {
+        width: 96%;
+        padding: 0 2% 0 2%;
+    }
+    
+    .secundaria {
+        width: 96%;
+        padding: 0 2% 20% 2%;
+    }
+
+    .circulo1, .circulo2 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .circulo1 {
+        left: -7%;
+    }
+
+    .circulo2 {
+        top: 25%;
+        right: 30%;
+    }
+
+    #f_input {
+        flex-direction: column;
+    }
+
+    #f_name, #f_mail, #f_enviar {
+        width: 96%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin: 0 0 8px 0;
+    }
+    
+    .dicas {
+        padding-top: 15px;
+    }
 }
