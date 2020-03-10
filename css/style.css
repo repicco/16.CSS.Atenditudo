@@ -162,6 +162,8 @@ form {
     font-size: 1.8em;
 }
 
+.btn-download
+
 /*--------------------------------Secundaria------------------------------------*/
 .secundaria {
     flex-grow: 4;
@@ -225,14 +227,18 @@ footer {
     }
     
     .principal {
-        width: 96%;
+        width: 100%;
         padding: 0 2% 0 2%;
     }
     
     .secundaria {
-        width: 96%;
+        width: 100%;
         padding: 0 2% 0% 2%;
         margin-bottom: 10%;
+    }
+
+    #img_sec {
+        display: none;
     }
 
     #f_input {
@@ -240,7 +246,7 @@ footer {
     }
 
     #f_name, #f_mail, #f_enviar{
-        width: 96%;
+        width: 100%;
         padding-left: 2%;
         padding-right: 2%;
         margin: 0 0 8px 0;

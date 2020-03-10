@@ -39,7 +39,7 @@
             <p>Esperamos que faça bom proveito deste material rico e ofereça um excelente atendimento ao cliente, seja qual for o canal de contato ;)
             </p>
 
-            <p>Problemas para fazer o download? <a href="content/ebook.pdf">Clique Aqui</a> 
+            <p>Problemas para fazer o download? <a href="content/ebook.pdf" target="_blank">Clique Aqui</a> 
             </p>
             
         </section>
@@ -81,6 +81,9 @@
         <!-- End Facebook Pixel Code -->
 </body>
 <script>
-    window.onload(document.location.href = 'content/ebook.zip')
+    function ebook (){
+        window.open('content/ebook.pdf', '_blank')
+    }
+    window.onload(ebook())
 </script>
 </html>
