@@ -1,9 +1,10 @@
-/*--------------------------------CssReset------------------------------------*/
+/*--------------------------------CsReset------------------------------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav, ul {
@@ -32,12 +33,13 @@ header {
     background-color: white;
     height: 50px;
     padding-left: 20px;
-    border-bottom: 3px solid rgb(52, 156, 207);
+    /*border-bottom: 3px solid rgb(52, 156, 207);*/
 }
 /*--------------------------------Container------------------------------------*/
 .container {
     display: flex;
     padding-top: 25px;
+    flex-direction: row-reverse;
 }
 
 /*--------------------------------Principal------------------------------------*/
@@ -48,6 +50,19 @@ header {
     width: 50%;
 }
 
+
+.thank {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: 10;
+    width: 100%;
+}
+
+.row {
+	flex-direction: 20;
+}
+
+
 .principal h1 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -57,6 +72,7 @@ header {
 .principal p {
     font-size: 16px;
     margin-bottom: 26px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -97,7 +113,8 @@ form {
     padding-bottom: 13px;
     border: rgb(52, 156, 207);
     border-radius: 10px;
-    background-color: rgb(52, 183, 177);
+    /*background-color: rgb(52, 183, 177);*/
+    background-color: #27AAE1;
     color: #fff;
     font-size: 25px;
     margin-bottom: 20px;
@@ -170,7 +187,14 @@ footer ul {
 
 footer p {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #1F7FA0;
+    padding: 10px ;
 }
 
 /*----------Media------*/
@@ -203,7 +227,7 @@ footer p {
         flex-direction: column;
     }
 
-    #f_name, #f_mail, #f_enviar {
+    #f_name, #f_mail, #f_enviar{
         width: 96%;
         padding-left: 2%;
         padding-right: 2%;
@@ -213,4 +237,27 @@ footer p {
     .dicas {
         padding-top: 15px;
     }
+}
+
+.main_header_nav_logo {
+    flex-basis: 20%;
+    padding: 5px;
+}
+
+.main_header_nav_logo img {
+    max-width: 240px;
+    padding: 25px;
+}
+
+.tagline {
+    color: #27AAE1;
+    font-size: 1.5em;
+}
+
+.tag_thank .h1 strong {
+    font-size: 1.8em;
+}
+
+al-center {
+    flex-direction: row;
 }
