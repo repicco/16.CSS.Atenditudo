@@ -14,7 +14,7 @@ nav, ul {
 a {
     text-decoration: none;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 a:hover {
@@ -25,22 +25,39 @@ html, body {
     height: 100%;
 }
 
+body {
+    position: relative;
+}
+
 /*--------------------------------Header------------------------------------*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    height: 50px;
+    max-height: 5%;
     padding-left: 20px;
     /*border-bottom: 3px solid rgb(52, 156, 207);*/
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
+
+.line {
+    width: 35px;
+    border: 1px solid #6F6F6F;
+    transform: rotate(90deg);
+    align-self: center;
+}
+
 /*--------------------------------Container------------------------------------*/
 .container {
     display: flex;
-    padding-top: 25px;
     flex-direction: row-reverse;
 
+}
+
+main {
+    max-height: 90%;
 }
 
 /*--------------------------------Principal------------------------------------*/
@@ -48,7 +65,7 @@ header {
     padding-left: 15px;
     padding-right: 15px;
     flex-grow: 6;
-    width: 50%;
+    width: 60%;
 }
 
 
@@ -65,59 +82,117 @@ header {
 
 
 .principal h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    /*max-width: 716px;*/
+    width: 100%;
+    /*max-height: 130px;*/
+    /*margin-top: 15px;*/
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
     text-align: center;
+
+    color: #1F7FA0;
+
+    margin-bottom: 3%;
 }
 
-.principal p {
-    font-size: 1em;
+.tagline {
+    /*max-width: 630px;*/]
+    width: 100%;
+    /*max-height: 44px;*/
+    /*margin-top: 30px;*/
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: center;
+
+    color: #27AAE1;
+
+    margin-bottom: 3%;
+}
+
+.p_text {
+    /*max-width: 626px;*/
+    width: 100%;
+    /*max-height: 213px;*/
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 24px;
+    text-align: justify;
+
+    color: #292929;
+
+    margin-bottom: 3%;
 }
 
 /*-----Form-----*/
 
 form {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    /*width: 634px;*/
     width: 100%;
+    /*height: 150px;*/
     flex-direction: column;
 }
 
 #f_input {
     display: flex;
-    margin-top: 2rem;
+    /*margin-top: 20px;*/
+    justify-content: space-between;
+
+    margin-bottom: 5%;
 }
 
-#f_name {
-    width: 44%;
-    flex-grow: 1;
-    margin-right: 3px;
-    border: 1px solid;
-    font-size: 16px;
-    padding: 5px;
-}
+#f_name, #f_mail {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 19px;
+    padding: 5px 0 5px 10px;
 
-#f_mail {
-    width: 44%;
-    flex-grow: 1;
-    margin-left: 3px;
-    border: 1px solid;
-    font-size: 16px;
-    padding: 5px;
+    width: 48%;
+    /*height: 39px;*/
+
+    background: #FFFFFF;
+    border: 1px solid #2E2E2E;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    
 }
 
 #f_enviar, .botao {
-    padding-top: 13px;
-    border: rgb(52, 156, 207);
-    border-radius: 10px;
-    /*background-color: rgb(52, 183, 177);*/
-    background-color: #27AAE1;
-    color: #fff;
-    font-size: 25px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
+    /*max-width: 628px;*/
+    max-height: 77px;
+    margin: 10px 0 5px 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 42px;
+    text-transform: uppercase;
+
+    background: #27AAE1;
+    border-radius: 5px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 5%;
 }
 
 .linkbtn:hover > .botao, #f_enviar:hover {     
@@ -128,17 +203,34 @@ form {
 .dicas {
     display: flex;
     justify-content: space-around;
+
+    width: 100%;
+    /*height: 120px;*/
+
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .dicas .item1, .item2, .item3 {
-    width: 125px;
+    width: 13%;
+    height: 13%;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
 .dicas p {
-    font-size: 0.9em;
+    width: 200px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 22px;
+    align-self: center;
+    
+
+    color: #000000;
 }
 
 .main_header_nav_logo {
@@ -147,25 +239,16 @@ form {
 }
 
 .main_header_nav_logo img {
-    max-width: 240px;
+    max-width: 263px;
     padding: 1.5rem;
 }
 
-.tagline {
-    color: #27AAE1;
-    font-size: 1.5em;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+.tag_thank .tagline h1 {
+    font-size: 1.8rem;
 }
-
-.tag_thank .h1 strong {
-    font-size: 1.8em;
-}
-
-.btn-download
 
 /*--------------------------------Secundaria------------------------------------*/
-.secundaria {
+.secundaria {  
     flex-grow: 4;
     width: 40%;
     display: flex;
@@ -173,12 +256,23 @@ form {
     align-content: center;
 }
 
+.img_sec {
+    max-width: 441px;
+    max-height: 543px;
+}
+
 /*---------------------------------Footer-----------------------------------*/
 
-
-footer ul {
+footer {
+    background-color: #1F7FA0;
     display: flex;
-    justify-content: center;
+    max-height: 5%;
+    width: 100%;
+
+    z-index: 1;
+    position: fixed;
+    bottom: 0%;
+
 }
 
 footer p {
@@ -188,10 +282,6 @@ footer p {
 }
 
 
-footer {
-    background-color: #1F7FA0;
-    padding: 10px ;
-}
 
 .img_mail {
     padding-left: 1em;
@@ -205,7 +295,7 @@ footer {
 }
 
 .principal2 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -215,6 +305,39 @@ footer {
 
 
 /*----------Media------*/
+@media (max-width: 1400) {
+    .principal h1 {
+        font-size: 1rem;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .tagline {
+        margin-bottom: 1%;
+    }
+
+    .dicas {
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+
+    #f_enviar, .botao {
+        margin-bottom: 2.5%;
+    }
+
+    #f_input {
+        margin-bottom: 2.5%;
+    }
+
+}
+
+
+
+
+
+
 @media (max-width: 1000px) {
     header {
         margin-top: 5%;
@@ -237,7 +360,7 @@ footer {
         margin-bottom: 10%;
     }
 
-    #img_sec {
+    .img_sec {
         display: none;
     }
 
