@@ -47,18 +47,18 @@ header {
 }
 
 .p-1 i {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .line {
-    width: 35px;
+    width: 30px;
     border: 1px solid #6F6F6F;
     transform: rotate(90deg);
     align-self: center;
 }
 
 .line2 {
-    width: 35px;
+    width: 30px;
     border: 1px solid #6F6F6F;
     transform: rotate(90deg);
     align-self: center;
@@ -71,7 +71,11 @@ header {
 }
 
 .p-2 i {
-    font-size: 35px;
+    font-size: 30px;
+}
+
+#redes {
+    display: flex;
 }
 
 /*--------------------------------Container------------------------------------*/
@@ -423,6 +427,12 @@ footer p {
     }
 }
 
+@media (max-width: 1024px) {
+    #redes {
+        display: none;
+    }
+}
+
 @media (max-width: 900px) {
     header {
         margin-top: 5%;
@@ -466,6 +476,8 @@ footer p {
         justify-content: center;
     }
 
+
+
     .main_header_nav_logo {
         margin-top: 1rem;
     }
@@ -474,9 +486,6 @@ footer p {
         margin-top: 10rem;
     }
 
-    #redes {
-        top: 4rem;
-    }
 
 }
 
