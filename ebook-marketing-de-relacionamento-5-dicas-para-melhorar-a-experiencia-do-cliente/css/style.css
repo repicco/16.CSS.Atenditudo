@@ -225,13 +225,15 @@ form {
 }
 
 .linkbtn > .botao, #f_enviar {     
-    background-color: #27AAE1;
-    /**background-color: rgba(52, 156, 207, 0.5);**/
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    /*background-color: rgba(52, 156, 207, 0.5);*/
 }
 
 .linkbtn:hover > .botao, #f_enviar:hover {     
-    background-color: rgb(52, 156, 207);
+    background-color: #45a060;
 }
+
 
 /*-----Dicas-----*/
 .dicas {
@@ -312,7 +314,7 @@ footer p {
     display: flex;
     color: #FFF; 
     justify-content: flex-end;
-    padding-top: 1rem;
+    padding: 0;
 }
 
 .img_mail {
