@@ -423,19 +423,6 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-    #redes {
-        display: none;
-    }
-
-    #rodape {
-        display: none;
-    }
-
-    #rodape-sm {
-    }
-}
-
-@media (max-width: 900px) {
     #header {
         display: block;
         text-align: center;
@@ -457,9 +444,15 @@ footer p {
         padding: 0;
     }
 
+    #redes {
+        display: none;
+    }
 
-    #footer {
-        display: block;
+    #rodape {
+        display: none;
+    }
+
+    #rodape-sm {
     }
 }
 
