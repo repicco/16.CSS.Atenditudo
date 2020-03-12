@@ -225,7 +225,8 @@ form {
 }
 
 .linkbtn > .botao, #f_enviar {     
-    background-color: rgba(52, 156, 207, 0.5);
+    background-color: #27AAE1;
+    /**background-color: rgba(52, 156, 207, 0.5);**/
 }
 
 .linkbtn:hover > .botao, #f_enviar:hover {     
