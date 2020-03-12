@@ -298,7 +298,6 @@ form {
 
 footer {
     background-color: #1F7FA0;
-    display: flex;
     max-height: 5%;
     width: 100%;
 
@@ -450,9 +449,6 @@ footer p {
 
     #rodape {
         display: none;
-    }
-
-    #rodape-sm {
     }
 }
 
