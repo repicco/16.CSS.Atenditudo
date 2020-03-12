@@ -366,6 +366,7 @@ footer p {
     }
 }
 
+/*
 @media (max-width: 1200px) {
     .img_sec {
         max-width: 400px;
@@ -420,6 +421,14 @@ footer p {
 
     .principal {
         margin-top: 2rem;
+    }
+}
+*/
+
+@media (max-width: 1200px) {
+    .img_sec {
+        max-width: 390px;
+        max-height: 490px;
     }
 }
 
