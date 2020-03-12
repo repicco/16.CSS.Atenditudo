@@ -314,8 +314,6 @@ footer p {
     padding-top: 1rem;
 }
 
-
-
 .img_mail {
     padding-left: 1em;
 }
@@ -461,6 +459,7 @@ footer p {
 
     .p-2 {
         display: block;
+        margin-right: 5%;
     }
 
     .p-2 i {
